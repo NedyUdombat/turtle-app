@@ -1,0 +1,185 @@
+@import '../../assets/scss/index';
+
+.sidebar {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  height: -webkit-fill-available;
+  min-width: 300px;
+  padding: 30px 20px 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 500px;
+  z-index: 3;
+
+
+  &::-webkit-scrollbar {
+    -ms-overflow-style: none;
+    display: none;
+    scrollbar-width: none;
+  }
+
+  .close-btn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    height: 40px;
+    width: fit-content;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+
+  .movie-title {
+    color: #202020;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 100%;
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+
+  .data-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    margin-top: 30px;
+
+    .movie-description {
+      color: #202020;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 130%;
+      margin-top: 8px;
+    }
+
+    .descriptions {
+      flex: 1;
+      padding-right: 30px;
+
+      .meta-div {
+        color: $gray;
+        display: flex;
+        font-size: 13px;
+        margin-bottom: 8px;
+        margin-top: 4px;
+
+        .rating {
+          display: flex;
+          margin: 0 20px;
+
+          .rating-value {
+            border: 1px solid $gray-scale-2;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 2px 4px;
+          }
+
+        }
+      }
+    }
+
+
+    .lists {
+      width: 40%;
+
+      .actors {
+        color: $gray-scale-1;
+        font-size: 12px;
+        font-weight: 400;
+
+        .actors-list {
+          color: $black;
+          font-size: 10px;
+          font-style: italic;
+          font-weight: 400;
+
+        }
+      }
+
+      .genres {
+        color: $gray-scale-1;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 8px;
+
+        .genre-list {
+          color: $black;
+          font-size: 10px;
+          font-style: italic;
+          font-weight: 400;
+
+        }
+      }
+    }
+  }
+
+  .loader {
+    bottom: 45%;
+    left: 45%;
+    position: absolute;
+    right: 45%;
+    text-align: center;
+  }
+
+  .chat-section {
+    border: 1px solid $black;
+    display: flex;
+    height: 100%;
+    margin-top: auto;
+    overflow-y: scroll;
+    padding: 20px;
+    position: relative;
+
+    .comments {
+      display: flex;
+      flex-direction: column-reverse;
+      overflow-y: scroll;
+      width: 100%;
+
+      .comment {
+        background-color: $gray;
+        border-radius: 4px;
+        color: $white;
+        margin: 12px 0;
+        padding: 15px 12px;
+        width: 70%;
+
+        &:first-child {
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+
+
+    .comment-form {
+      bottom: 10px;
+      display: flex;
+      height: 40px;
+      left: 20px;
+      position: absolute;
+      right: 20px;
+
+      .form-control {
+        border: 1px solid #202020;
+        border-radius: 4px;
+        flex: 1;
+        padding: 0 8px;
+      }
+
+      .send-btn {
+        border: 1px solid #202020;
+        border-radius: 4px;
+        height: 100%;
+        margin-left: 5px;
+        padding: 0 8px;
+        width: 70px;
+      }
+    }
+  }
+}
