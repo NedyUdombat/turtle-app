@@ -5,12 +5,12 @@ import { formatTimeToString } from '../../utils/helpers';
 import './index.scss';
 
 window.firebase.initializeApp({
-  apiKey: config.APIKEY,
-  authDomain: config.AUTHDOMAIN,
-  projectId: config.PROJECTID,
-  storageBucket: config.STORAGEBUCKET,
-  messagingSenderId: config.MESSAGINGSENDERID,
-  appId: config.APPID,
+  apiKey: config.API_KEY,
+  authDomain: config.AUTH_DOMAIN,
+  projectId: config.PROJECT_ID,
+  storageBucket: config.STORAGE_BUCKET,
+  messagingSenderId: config.MESSAGING_SENDER_ID,
+  appId: config.APP_ID,
 });
 
 const firestore = window.firebase.firestore();
