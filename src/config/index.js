@@ -1,11 +1,11 @@
 const commonEnvs = {
   NODE_ENV: process.env.NODE_ENV,
-  APIKEY: process.env.APIKEY,
-  AUTHDOMAIN: process.env.AUTHDOMAIN,
-  PROJECTID: process.env.PROJECTID,
-  STORAGEBUCKET: process.env.STORAGEBUCKET,
-  MESSAGINGSENDERID: process.env.MESSAGINGSENDERID,
-  APPID: process.env.MESSAGINGSENDERID,
+  API_KEY: process.env.API_KEY,
+  AUTH_DOMAIN: process.env.AUTH_DOMAIN,
+  PROJECT_ID: process.env.PROJECT_ID,
+  STORAGE_BUCKET: process.env.STORAGE_BUCKET,
+  MESSAGING_SENDER_ID: process.env.MESSAGING_SENDER_ID,
+  APP_ID: process.env.APP_ID,
 };
 
 const config = Object.freeze({
